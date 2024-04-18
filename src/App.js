@@ -14,6 +14,7 @@ import Hydraulic from './Hydraulic/Hydraulic';
 import Metal from './Components/Metal/Metal';
 import Wire from './Wire/Wire';
 import Workshop from './Components/Workshop/Workshop';
+import Projects from './Components/Projects/Projects';
 
 function App() {
  let routes =  createBrowserRouter([
@@ -22,6 +23,7 @@ function App() {
   {path:"service" , element:<Service/>},
  {path:"contactus" , element:<Contactus/>},
  {path:"workshop" , element:<Workshop/>},
+ {path:"projects", element:<Projects/>},
    {path:"home" , element:<Home/> , children:[
     {path:"forming", element:<Forming/>},
     {path:"dynamic", element:<Dynamicbalance/>},

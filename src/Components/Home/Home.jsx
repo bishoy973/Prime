@@ -18,18 +18,11 @@ import customers from '../Images/ourCustomers.svg';
 
 
 
-
-
-
-
-
-
-
 export default function Home() {
 let nav =  useNavigate();
   return (
     <>
-    <div className='d-flex w-100 align-items-center bg-danger vh-100'>
+    <div className='d-flex w-100 align-items-center bg-transparent vh-100'>
     <img src={img} className='w-100 vh-100' alt="" />
 <div className='customImgHome w-100 vh-100'></div>
 <div className="homeCustom align-items-center ms-5 ps-5 w-100">

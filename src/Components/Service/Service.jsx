@@ -5,16 +5,7 @@ import service3 from '../Images/service3.svg'
 import service4 from '../Images/service4.svg'
 import service5 from '../Images/service4.svg'
 import service6 from '../Images/service5.svg'
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Fade from '@mui/material/Fade';
-
-
-import { useNavigate } from 'react-router-dom'
-import vid from '../Images/video.svg';
-import aboutLeft from '../Images/aboutImgLeft.svg'
-import aboutRight from '../Images/aboutImg 2.svg'
+import vid from '../Images/video.svg'
 import serviceMain from '../Images/head_services.png'
 import CollapseService from './Collapse'
 
@@ -53,7 +44,8 @@ export default function Service() {
 </div>
 </div>
  
- <div className="d-flex"><div className="bg-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem iste delectus nisi esse. Aliquam, sunt. Hic nemo a corrupti.</div>
+ <div className="d-flex bg-success mx-3 px-2">
+ <div className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem iste delectus nisi esse. Aliquam, sunt. Hic nemo a corrupti.</div>
  
  <CollapseService/>
  </div> 

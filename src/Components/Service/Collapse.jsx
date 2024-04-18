@@ -1,6 +1,6 @@
 import React from 'react';
 import { CaretRightOutlined } from '@ant-design/icons';
-import {  Button, ConfigProvider, Space , theme , Collapse } from 'antd';
+import {   ConfigProvider, theme , Collapse } from 'antd';
 
 <ConfigProvider
 theme={{
@@ -32,17 +32,6 @@ text3
 
 const getItems = (panelStyle) => [
   {
-    key: '1',
-    label: <div className=" d-flex justify-content-between col-md-3">this is dropdown
-    <div>+</div>
-    </div>,
-    children: <p>{text}</p>,
-    style: panelStyle,
-    showArrow: false,
-
-    
-  },
-  {
     key: '2',
     label: 'This is panel header 2',
     children: <p>{text1}</p>,
@@ -55,12 +44,16 @@ const getItems = (panelStyle) => [
     label: 'This is panel header 3',
     children: <p>{text2}</p>,
     style: panelStyle,
+    showArrow: false,
+
   },
   {
     key: '4',
     label: 'This is panel header 3',
     children: <p>{text3}</p>,
     style: panelStyle,
+    showArrow: false,
+
   },
 ];
 const CollapseService = () => {
