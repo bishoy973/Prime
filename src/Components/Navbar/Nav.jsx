@@ -33,8 +33,11 @@ export default function Navbar() {
       <Link className="nav-link active mx-3" aria-current="page" to="/service">Service</Link>
     </li>
     <li className="nav-item">
-    <Link className="nav-link active mx-3" aria-current="page" to="workshop">Workshops</Link>
+    <Link className="nav-link active mx-3" aria-current="page" to="/workshop">Workshops</Link>
   </li>
+  <li className="nav-item">
+  <Link className="nav-link active mx-3" aria-current="page" to="/projects">Projects</Link>
+</li>
   <li className="nav-item">
   <Link className="nav-link active mx-3" aria-current="page" to="contactus">Contact us</Link>
 </li> 
