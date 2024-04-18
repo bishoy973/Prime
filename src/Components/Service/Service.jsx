@@ -1,12 +1,12 @@
 import React from 'react'
-import service1 from '../Images/service1.svg'
-import service2 from '../Images/service2.svg'
-import service3 from '../Images/service3.svg'
-import service4 from '../Images/service4.svg'
-import service5 from '../Images/service4.svg'
-import service6 from '../Images/service5.svg'
-import vid from '../Images/video.svg'
-import serviceMain from '../Images/head_services.png'
+import vid from "../../assets/images/video.svg";
+import service1 from "../../assets/images/service1.svg";
+import service2 from "../../assets/images/service2.svg";
+import service3 from "../../assets/images/service3.svg";
+import service4 from "../../assets/images/service4.svg";
+import service5 from "../../assets/images/service4.svg";
+import service6 from "../../assets/images/service5.svg";
+import serviceMain from "../../assets/images/head_services.png";
 import CollapseService from './Collapse'
 
 

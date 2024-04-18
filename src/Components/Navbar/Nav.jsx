@@ -1,8 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import logos from '../Images/prime.png'
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
+import logos from "../../assets/images/prime.png";
 
 export default function Navbar() {
+  const { i18n } = useTranslation();
+
+  const [lang, setLang] = useState("en");
+
+  useEffect(() => {
+    i18n.changeLanguage(lang);
+  }, [lang]);
+
   return (
     <>
   <nav className="navbar fixed-top  navbar-expand-lg bg-white">
@@ -23,13 +33,10 @@ export default function Navbar() {
       <Link className="nav-link active mx-3" aria-current="page" to="/service">Service</Link>
     </li>
     <li className="nav-item">
-    <Link className="nav-link active mx-3" aria-current="page" to="/workshop">Workshops</Link>
+    <Link className="nav-link active mx-3" aria-current="page" to="workshop">Workshops</Link>
   </li>
   <li className="nav-item">
-    <Link className="nav-link active mx-3" aria-current="page" to="/projects">Projects</Link>
-  </li>
-  <li className="nav-item">
-  <Link className="nav-link active mx-3" aria-current="page" to="/contactus">Contact us</Link>
+  <Link className="nav-link active mx-3" aria-current="page" to="contactus">Contact us</Link>
 </li> 
       </ul>
       <i class="fa-solid fa-globe"></i>

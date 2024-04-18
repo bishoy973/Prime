@@ -1,5 +1,5 @@
 import React from 'react'
-import WS1 from '../Images/workshop.png'
+import WS1 from '../../assets/images/workshop.png'
 
 export default function Workshop() {
   return (

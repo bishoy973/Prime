@@ -1,20 +1,20 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react'
-import img from '../Images/image 97.png'
+import img from '../../assets/images/image 97.png'
 import { Outlet, useNavigate } from 'react-router-dom'
-import img1 from '../Images/about_1.png'
-import img2 from '../Images/about-2.png'
-import img3 from '../Images/about-3.png'
-import logoo from '../Images/logo.png'
-import frame1 from '../Images/Frame1.svg'
-import frame2 from '../Images/Frame2.svg'
-import frame3 from '../Images/Frame3.svg'
-import frame4 from '../Images/Frame4.svg'
-import frame5 from '../Images/Frame5.svg'
-import frame6 from '../Images/Frame6.svg'
+import img1 from '../../assets/images/about_1.png'
+import img2 from '../../assets/images/about-2.png'
+import img3 from '../../assets/images/about-3.png'
+import logoo from '../../assets/images/logo.png'
+import frame1 from '../../assets/images/Frame1.svg'
+import frame2 from '../../assets/images/Frame2.svg'
+import frame3 from '../../assets/images/Frame3.svg'
+import frame4 from '../../assets/images/Frame4.svg'
+import frame5 from '../../assets/images/Frame5.svg'
+import frame6 from '../../assets/images/Frame6.svg'
 import WorkNav from '../../WorkshopLayout/WorkNav'
-import vid from '../Images/video.svg';
-import customers from '../Images/ourCustomers.svg';
+import vid from '../../assets/images/video.svg';
+import customers from '../../assets/images/ourCustomers.svg';
 
 
 
