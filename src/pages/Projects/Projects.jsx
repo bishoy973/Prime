@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../Images/slider-image-2.jpeg"
+import img from "../../assets/images/slider-image-2.jpeg"
 
 
 export default function Projects() {
