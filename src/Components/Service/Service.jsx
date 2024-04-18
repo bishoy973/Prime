@@ -16,24 +16,14 @@ import vid from '../Images/video.svg';
 import aboutLeft from '../Images/aboutImgLeft.svg'
 import aboutRight from '../Images/aboutImg 2.svg'
 import serviceMain from '../Images/head_services.png'
+import CollapseService from './Collapse'
 
 
-
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-</head>
 
 
 
 export default function Service() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+ 
 
     return (
       <>
@@ -63,43 +53,14 @@ export default function Service() {
 </div>
 </div>
  
-  
+ <div className="d-flex"><div className="bg-danger">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem iste delectus nisi esse. Aliquam, sunt. Hic nemo a corrupti.</div>
+ 
+ <CollapseService/>
+ </div> 
 
 
     <div>
-    <div class="container mt-4">
-    <div id="accordion">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Question 1: What is Bootstrap?
-            </button>
-          </h5>
-        </div>
-  
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="card-body">
-            Bootstrap is a popular front-end framework for building responsive and mobile-first websites and web applications.
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Question 2: How do I get started with Bootstrap?
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            To get started with Bootstrap, you can include Bootstrap's CSS and JavaScript files in your project, and start using its predefined components and utilities.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
     </div>
 
   

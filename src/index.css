@@ -118,3 +118,10 @@ color: white !important;
   left: -70px !important;
   margin-top: 40px;
 }
+panelStyle{
+  background-color: #1F4877 !important;
+  /* background-color: rgb(10, green, rgba(33, 33, 224,0.5)); */
+  display: flex;
+  justify-content: space-around;
+}
+
