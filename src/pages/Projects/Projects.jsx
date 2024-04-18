@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img from "../../assets/images/slider-image-2.jpeg"
+import imgProject from "../../assets/images/head_project.png"
 
 
 export default function Projects() {
@@ -15,11 +16,23 @@ export default function Projects() {
   };
   return (
     <>
+    <div className="d-flex justify-content-center w-100 align-items-center bg-danger">
+        <img src={imgProject} className="w-100" alt="" />
+        <div className="homeCustom align-items-center bg w-100">
+          <div className="position-absolute justify-content-center w-100">
+            <p className="w-100 text-white  d-flex justify-content-center fs-1 fw-bolder">
+             Our Projects
+            </p>
+            <p className="w-100 text-white  d-flex justify-content-center">
+            Creating spaces | Enhancing lives
+          </p>
+          </div>
+        </div>
+      </div>
       <div className='container mt-5 pt-5'>
      <div className='mt-5 pt-5'>
      <div className='d-flex justify-content-between'>
       <h2>Learn more about our projects</h2>
-      <p className="text-info "><span className='pe-1'>learn more</span> <i class="fa-solid fa-arrow-right"></i></p>
      </div>
       </div>
   
