@@ -124,4 +124,8 @@ panelStyle{
   display: flex;
   justify-content: space-around;
 }
-
+.ProjectsCustom{
+  background-image: linear-gradient(#DDDDDD , #1B334F);
+color: black;
+height: 457px !important;
+}

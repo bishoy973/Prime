@@ -64,7 +64,6 @@ export default function Projects() {
 </div>
 
 
-
 <div className="container-fluid">
 <div className="row">
 <div className="col-md-6 ProjectsCustom pt-5">
@@ -78,7 +77,6 @@ export default function Projects() {
 </div>
 </div>
 </div>
-
 
     </>
   );
