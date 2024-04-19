@@ -46,7 +46,6 @@ export default function Service() {
  
  <div className="d-flex bg-success mx-3 px-2">
  <div className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique exercitationem iste delectus nisi esse. Aliquam, sunt. Hic nemo a corrupti.</div>
- 
  <CollapseService/>
  </div> 
 

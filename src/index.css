@@ -129,3 +129,14 @@ panelStyle{
 color: black;
 height: 457px !important;
 }
+
+.contactCustom{
+  background-image: linear-gradient(#DDDDDD ,white);
+  color: black;
+  width: 800px !important;
+  height: 457px !important;
+margin-bottom : -80px;  
+}
+.customImg{
+  height: 457px !important;
+}
