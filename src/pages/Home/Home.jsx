@@ -22,7 +22,7 @@ export default function Home() {
   let nav = useNavigate();
 
   const { t } = useTranslation();
-
+   
   return (
     <>
       <div className="d-flex w-100 align-items-center bg-danger vh-100">
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="homeCustom align-items-center ms-5 ps-5 w-100">
           <div className=" ms-4 ps-1">
             <h2 className="homecustom2  text-white ms-5 ps-5">
-              <p>{t("home.hero.title.prime-for")}</p>
+              <p>Prime FOR</p>
               <p className="w-100">ENGINEERING SOLUTIONS</p>
             </h2>
             <p className="homecustom3 ms-5 ps-5">Ask For the right Solution</p>
