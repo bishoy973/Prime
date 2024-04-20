@@ -31,7 +31,7 @@ export default function Home() {
         <div className="homeCustom align-items-center ms-5 ps-5 w-100">
           <div className=" ms-4 ps-1">
             <h2 className="homecustom2  text-white ms-5 ps-5">
-              <p>Prime FOR</p>
+              <p>{t("home.hero.title.prime-for")}</p>
               <p className="w-100">ENGINEERING SOLUTIONS</p>
             </h2>
             <p className="homecustom3 ms-5 ps-5">Ask For the right Solution</p>
