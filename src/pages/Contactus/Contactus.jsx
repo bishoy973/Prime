@@ -1,9 +1,11 @@
 import React from 'react'
 import contactHeader from '../../assets/images/head_contact.png'
 import contacttImg from "../../assets/images/contact.png"
+import { useTranslation } from 'react-i18next'
 
 
 export default function Contactus() {
+  const {t} = useTranslation();
   return (
     <>
     <div className="d-flex justify-content-center w-100 align-items-center bg-danger mb-5">
@@ -11,7 +13,7 @@ export default function Contactus() {
         <div className="homeCustom align-items-center bg w-100">
           <div className="position-absolute justify-content-center w-100">
             <p className="w-100 text-white  d-flex justify-content-center fs-1 fw-bolder">
-            Contact Us
+            {t("contactUs.Main.Title")}
             </p>
           </div>
         </div>
@@ -25,12 +27,11 @@ export default function Contactus() {
 
 <div className="position-absolute d-flex w-100 h-100">
 <div>
-<h2 className="pt-3 ps-3">Contact Us</h2>
-<p className="pt-3 ps-3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered simply free text available</p>
-<p className="pt-3 ps-3"><i className="fa-solid fa-location-dot pe-1"></i>7 Mohandes Hamed Al Kholi, San Stefano, El Raml 1, Alexandria</p>
-<p className="pt-3 ps-3"><i className="fa-solid fa-phone-volume pe-1"></i>+20-106 344 0 288</p>
-<p className="pt-3 ps-3"><i className="fa-solid fa-envelope pe-1"></i>info@prime-solutions.org</p>
-
+<h2 className="pt-3 ps-3">{t("ContactUSForm")}</h2>
+<p className="pt-3 ps-3">{t("ContactUSFormParagraph")}</p>
+<p className="pt-3 ps-3"><i className="fa-solid fa-location-dot pe-1"></i>{t("Location")}</p>
+<p className="pt-3 ps-3"><i className="fa-solid fa-phone-volume pe-1"></i>{t("Phone")}</p>
+<p className="pt-3 ps-3"><i className="fa-solid fa-envelope pe-1"></i>{t("Email")}</p>
 
 </div>
 <div className=" h-100  p-3">

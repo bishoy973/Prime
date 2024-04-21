@@ -38,6 +38,10 @@ code {
   background-color: #ADACA7;
 
 }
+.customBtn2{
+  background-color: #ADACA7;
+
+}
 .customAbout{
   width: 203px;
   height: 203px;
@@ -115,8 +119,9 @@ color: white !important;
 
 .customPositionAbout{
   position: relative;
-  left: -70px !important;
+  left: -35px !important;
   margin-top: 40px;
+  bottom: 17px !important;
 }
 panelStyle{
   background-color: #1F4877 !important;
@@ -140,3 +145,61 @@ margin-bottom : -80px;
 .customImg{
   height: 457px !important;
 }
+.aboutBoxContent{
+  width: Fixed (1,075px)px;
+height: Fixed (818px)px;
+top: 2158px;
+gap: 10px;
+opacity: 0px;
+background: linear-gradient(180deg, rgba(221, 221, 221, 0.32) 0%, rgba(27, 51, 79, 0.27) 100%);
+
+}
+.vl {
+  border-left: 6px solid black;
+  height: 50px;
+}
+.aboutextBox{
+  width: 474px;
+height: 90px;
+gap: 0px;
+opacity: 0px;
+
+}
+.titleFixedAbout{
+width: 200px !important;
+}
+.serviceBox{
+width: 300px;
+height: 250.99px;
+top: 10px;
+left: 10px;
+gap: 0px;
+border-radius: 18.79px  !important;
+border-top: 7px solid  #1F4877 !important;
+background: #E1E1E1 !important;
+
+}
+.serviceBoxHome{
+  width: 300px;
+  height: 250.99px;
+  top: 10px;
+  left: 10px;
+  gap: 0px;
+  border-radius: 18.79px  !important;
+  border-top: 7px solid  #1F4877 !important;
+  background: #FFF !important;
+  color: #1F4877 !important;
+}
+.IconFrame{
+  width: 40px !important;
+  
+}
+.FAQ{
+  background: linear-gradient(180deg, rgba(221, 221, 221, 0.32) 0%, rgba(27, 51, 79, 0.27) 100%);
+
+
+}
+.ant-collapse-content{
+  background: linear-gradient(180deg, rgba(221, 221, 221, 0.32) 0%, rgba(27, 51, 79, 0.27) 100%);
+}
+

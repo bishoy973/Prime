@@ -6,9 +6,11 @@ import img from "../../assets/images/slider-image-2.jpeg"
 import imgProject from "../../assets/images/head_project.png"
 import projectImg from "../../assets/images/image6.png"
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 
 export default function Projects() {
+  const {t} = useTranslation();
   var settings = {
     dots: true,
     infinite: true,
@@ -24,10 +26,10 @@ export default function Projects() {
         <div className="homeCustom align-items-center bg w-100">
           <div className="position-absolute justify-content-center w-100">
             <p className="w-100 text-white  d-flex justify-content-center fs-1 fw-bolder">
-             Our Projects
+             {t("OurProjects.title")}
             </p>
             <p className="w-100 text-white  d-flex justify-content-center">
-            Creating spaces | Enhancing lives
+          {t("OurProjects.Section2.Title")}
           </p>
           </div>
         </div>
@@ -44,19 +46,19 @@ export default function Projects() {
     <div className="card col-md-3 mx-auto mt-4 w-50 text-center bg-danger d-flex justify-content-center ">
 <img src={img} className="w-100 " alt="..." />
 <div className="card-body">
-  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <p className="card-text">{t("OurProjects.Section2.Card1")}</p>
 </div>
 </div>
 <div className="card col-md-3 mx-auto mt-4 w-50 text-center bg-danger d-flex justify-content-center ">
 <img src={img} className="w-100 " alt="..." />
 <div className="card-body">
-  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <p className="card-text">{t("OurProjects.Section2.Card2")}</p>
 </div>
 </div>
 <div className="card col-md-3 mx-auto mt-4 w-50 text-center bg-danger d-flex justify-content-center ">
 <img src={img} className="w-100 " alt="..." />
 <div className="card-body">
-  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <p className="card-text">{t("OurProjects.Section2.Card3")}</p>
 </div>
 </div>    
   </Slider>
@@ -66,9 +68,9 @@ export default function Projects() {
 
 <div className="container-fluid">
 <div className="row">
-<div className="col-md-6 ProjectsCustom pt-5">
-<h2>Lorem ipsum dolor sit amet.</h2>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, autem.</p>
+<div className="col-md-6 ProjectsCustom pt-5 ps-4">
+<h2 className="w-75">{t("OurProjectsminiTitle")}</h2>
+<p>{t("OurProjectsminiProjects")}</p>
 <button className='customBtn btn p-3  text-center' onClick={()=>nav("/contactus")}>Contact Us <i class="fa-solid fa-phone-volume"></i></button>
 
 </div>

@@ -15,6 +15,12 @@ import frame3 from "../../assets/images/Frame3.svg";
 import frame4 from "../../assets/images/Frame4.svg";
 import frame5 from "../../assets/images/Frame5.svg";
 import frame6 from "../../assets/images/Frame6.svg";
+import serviceIcon1 from "../../assets/images/ServiceIcon1.svg";
+import serviceIcon2 from "../../assets/images/serviceIcon2.svg";
+import serviceIcon3 from "../../assets/images/serviceIcon3.svg";
+import serviceIcon4 from "../../assets/images/serviceIcon4.svg";
+import serviceIcon5 from "../../assets/images/serviceIcon5.svg";
+
 import vid from "../../assets/images/video.svg";
 import customers from "../../assets/images/ourCustomers.svg";
 
@@ -31,15 +37,15 @@ export default function Home() {
         <div className="homeCustom align-items-center ms-5 ps-5 w-100">
           <div className=" ms-4 ps-1">
             <h2 className="homecustom2  text-white ms-5 ps-5">
-              <p>Prime FOR</p>
-              <p className="w-100">ENGINEERING SOLUTIONS</p>
+              <p>{t('home.hero.title.prime-forP1')}</p>
+              <p className="w-100">{t('home.hero.title.prime-forP2')}</p>
             </h2>
-            <p className="homecustom3 ms-5 ps-5">Ask For the right Solution</p>
+            <p className="homecustom3 ms-5 ps-5">{t('home.hero.title.prime-forP3')}</p>
             <button
               className="customBtn btn p-3  text-center"
               onClick={() => nav("/contactus")}
             >
-              Contact Us <i class="fa-solid fa-phone-volume"></i>
+             {t("home.hero.title.prime-forBtn")}<i class="fa-solid fa-phone-volume"></i>
             </button>
           </div>
         </div>
@@ -61,19 +67,12 @@ export default function Home() {
           <div className="col-md-6">
             <h3>About us</h3>
 
-            <div className="h4">Lorem ipsum dolor sit.</div>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
+            <div className="h4">{t("About.hero.title.prime-forh4")}</div>
+            <div className="h5">{t("About.hero.title.prime-forh5")}</div>
+
+           <p><i class="fa-solid fa-circle pe-2 pt-3"></i>{t("About.hero.title.prime-forBullet1")}</p>
+           <p><i class="fa-solid fa-circle pe-2"></i>{t("About.hero.title.prime-forBullet2")}</p>
+           <p><i class="fa-solid fa-circle pe-2"></i>{t("About.hero.title.prime-forBullet3")}</p>
           </div>
         </div>
       </div>
@@ -81,29 +80,73 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-3  ">
-              <img src={frame1} className="w-100" alt="" />
-              <img src={frame2} className="w-100" alt="" />
+            <div className='serviceBoxHome mb-2'>
+            <div className=" w-100 h-100">
+            <div className=' h-50 mx-auto d-flex align-items-end justify-content-center'><img src={serviceIcon1} width={"35px"} height={"35px"} alt="" /></div>
+            <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card1")}</div>
+            
             </div>
-            <div className="col-md-3 ">
-              <img src={frame3} className="w-100" alt="" />
-              <img src={frame4} className="w-100" alt="" />
+            
             </div>
-            <div className="col-md-3 ">
-              <img src={frame5} className="w-100" alt="" />
-              <img src={frame6} className="w-100" alt="" />
+            <div  className='serviceBoxHome   bg-danger'>
+            <div className=" w-100 h-100">
+            <div className=' h-50 mx-auto d-flex align-items-end justify-content-center'><img src={serviceIcon1} width={"35px"} height={"35px"} alt="" /></div>
+            <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card2")}</div>
+            
+            </div>
+            </div>
+            </div>
+            <div className="col-md-3  ">
+            <div className='serviceBoxHome mb-2'>
+            <div className=" w-100 h-100">
+            <div className=' h-50 mx-auto d-flex align-items-end justify-content-center'><img src={serviceIcon2} width={"35px"} height={"35px"} alt="" /></div>
+            <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card3")}</div>
+            
+            </div>
+            
+            </div>
+            <div  className='serviceBoxHome   bg-danger'>
+            <div className=" w-100 h-100">
+            <div className=' h-50 mx-auto d-flex align-items-end justify-content-center'><img src={serviceIcon2} width={"35px"} height={"35px"} alt="" /></div>
+            <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card4")}</div>
+            
+            </div>
+            </div>
+            </div>
+            <div className="col-md-3  ">
+            <div className='serviceBoxHome mb-2'>
+            <div className=" w-100 h-100">
+            <div className=' h-50 mx-auto d-flex align-items-end justify-content-center'><img src={serviceIcon3} width={"35px"} height={"35px"} alt="" /></div>
+            <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card5")}</div>
+            
+            </div>
+            
+            </div>
+            <div  className='serviceBoxHome   bg-danger'>
+            <div className=" w-100 h-100">
+            <div className=' h-50 mx-auto d-flex align-items-end justify-content-center'><img src={serviceIcon3} width={"35px"} height={"35px"} alt="" /></div>
+            <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card6")}</div>
+            
+            </div>
+            </div>
             </div>
             <div className="col-md-3 text-white">
-              <small>Our Service</small>
-              <p className="fs-2 fw-bolder">our main service</p>
+              <small>{t("ourService.hero.title.prime.forSmall")}</small>
+              <p className="fs-2 fw-bolder">{t("ourService.hero.title.prime.forh2")}</p>
               <p className="fs-4">
-                Prime has the satisfaction of its customers in the following
-                fields
+           
+              {t("ourService.hero.title.prime.forP1")}
               </p>
               <p>
-                In 2020 Prime made an agreement with Atta sons to integrate the
-                contracting works and maintenance works with one of the biggest
-                workshops in the middle east
+              {t("ourService.hero.title.prime.forP2")}
+
               </p>
+              <button
+              className="customBtn2 btn py-3 px-5 mt-5"
+              onClick={() => nav("/contactus")}
+            >
+             {t("home.hero.title.prime-forBtn")}<i class="fa-solid fa-phone-volume"></i>
+            </button>
             </div>
           </div>
         </div>
@@ -111,35 +154,27 @@ export default function Home() {
       <div className="container">
         <div className="d-flex justify-content-between">
           <div>
-            <p>OUR PROJECTS</p>
-            <h2>Learn more about our projects</h2>
-            <h2>And the solutions we provide</h2>
+            <p>{t("ourProject.hero.title")}</p>
+            <h2>{t("ourProject.hero.title.P1")}</h2>
+            <h2>{t("ourProject.hero.title.P2")}</h2>
           </div>
 
           <p
             className="customProjects text-info fw-bolder"
-            onClick={() => nav("/workshop")}
+            onClick={() => nav("/projects")}
           >
-            <span className="pe-1">Show more</span>{" "}
+            <span className="pe-1">{t("ourProject.hero.title.btn")}</span>{" "}
             <i class="fa-solid fa-arrow-right"></i>
           </p>
         </div>
         <div className="row justify-content-center mt-5">
-          <div className="card col-md-3">
-            <img src={img1} className="cardImg card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
+       
           <div className="card col-md-3">
             <img src={img2} className="cardImg card-img-top w-100" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              {t("ourProject.hero.title.subP2")}
+
               </p>
             </div>
           </div>
@@ -147,10 +182,21 @@ export default function Home() {
             <img src={img3} className="cardImg card-img-top" alt="..." />
             <div className="card-body">
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              {t("ourProject.hero.title.subP3")}
+
               </p>
             </div>
+          </div>
+        
+          <div className="card col-md-3">
+          <img src={img1} className="cardImg card-img-top w-100" alt="..." />
+          <div className="card-body">
+            <p className="card-text">
+            {t("ourProject.hero.title.subP1")}
+            </p>
+          </div>
+     
+         
           </div>
         </div>
       </div>
@@ -194,12 +240,9 @@ export default function Home() {
         </div>
       </div>
       <div className="text-center   mt-5 pt-5 my-5">
-        <h2>Workshops</h2>
+        <h2>{t("workshop.hero.title")}</h2>
         <p className="container px-5 justify-content-center text-center">
-          One of the largest integrated service centers in heavy-duty
-          maintenance with the provision of all services in the areas that
-          characterize our company e.g. Metalworking and forming field, Metal
-          Cutting, Dynamic Balancing Field, welding field.
+        {t("workshop.home.p")}
         </p>
         <div className="m-3">Lorem ipsum dolor sit amet.</div>
 
@@ -213,7 +256,7 @@ export default function Home() {
         <img src={vid} className="w-100" alt="" />
       </div>
       <div className="container mb-5 pb-5">
-        <h2 className="mt-5 text-center">OUR TOP CUSTOMERS</h2>
+        <h2 className="mt-5 text-center">{t("topCustomers.home.title")}</h2>
         <div>
           <img src={customers} className="w-100 mt-5" alt="" />
         </div>

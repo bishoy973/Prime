@@ -5,7 +5,7 @@ import "./App.css";
 import Layout from "./Components/Layout/Layout";
 import Dynamicbalance from "./Components/DynamicBalancing/Dynamicbalance";
 import Welding from "./Components/Welding/Welding";
-import Metal from "./Components/Metal/Metal";
+import Metal from "./Components/MetalWork/Metalwork";
 import Workshop from "./Components/Workshop/Workshop";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";

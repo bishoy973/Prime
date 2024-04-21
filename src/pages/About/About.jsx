@@ -1,17 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import imgAbout from "../../assets/images/head_about.png";
 import img3 from "../../assets/images/about-3.png";
-import logoo from "../../assets/images/logo.png";
 import img1 from "../../assets/images/about_1.png";
 import img2 from "../../assets/images/about-2.png";
 import vid from "../../assets/images/video.svg";
-import aboutLeft from "../../assets/images/aboutImgLeft.svg";
 import aboutRight from "../../assets/images/aboutImg 2.svg";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
   let nav = useNavigate();
+  const {t} = useTranslation()
   return (
     <>
       <div className="d-flex justify-content-center w-100 align-items-center bg-danger">
@@ -28,7 +27,7 @@ export default function About() {
       <div className="container  vh-100 w-100  d-flex align-items-center ">
         <div className="row">
           <div className="col-md-5    d-flex justify-content-center align-items-center">
-            <div className="w-50 h-100 pe-2">
+            <div className="w-50 h-100">
               <img src={img1} className="w-100 h-100" alt="" />
             </div>
             <div className="w-50">
@@ -49,9 +48,35 @@ export default function About() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <img src={aboutLeft} className="w-100" alt="" />
+          <div className="col-md-6 aboutBoxContent">
+           <p className="text-start fs-2 pt-2 ps-3 fw-bolder">{t("About.section.main.title")}</p>
+           <p className="fs-4 ps-3 pe-2">{t("About.section.main.Subtitle")}</p>
+          <div className="container">
+          <div className="row">
+          <div className="col-md-4 pt-3 d-flex"><i class="fa-solid fa-circle px-1 pt-2"></i>
+          <h6 className="px-1 pt-2 titleFixedAbout">{t("About.section.left.title1")}</h6>
+          <p className="vl ms-2 pe-0"></p>
           </div>
+          <p className=" col-md-8 pt-3">{t("About.section.right.description")}</p>
+        
+          <div className="col-md-4 pt-3 d-flex"><i class="fa-solid fa-circle px-1 pt-2"></i>
+          <h6 className="px-1 pt-2 titleFixedAbout">{t("About.section.left.title2")}</h6>
+          <p className="vl ms-2 pe-0"></p>
+          </div>
+          <p className=" col-md-8 pt-3">{t("About.section.right.description2")}</p>
+          <div className="col-md-4 pt-3 d-flex"><i class="fa-solid fa-circle px-1 pt-2"></i>
+          <h6 className="px-1 pt-2 titleFixedAbout">{t("About.section.left.title3")}</h6>
+          <p className="vl ms-2 pe-0"></p>
+          </div>
+          <p className=" col-md-8 pt-2">{t("About.section.right.description3")} </p>
+          </div>
+          </div>
+          
+           
+       
+          </div>
+          
+         
           <div className="col-md-5">
             <img
               src={aboutRight}
