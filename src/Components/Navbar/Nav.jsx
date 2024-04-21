@@ -89,20 +89,18 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <i class="fa-solid fa-globe" />
-
-            <ul
-              className="dropdown py-auto mb-0 px-2"
+            <div
+              className="d-flex align-items-center py-auto mb-0 px-2"
               onClick={() => {
                 if (lang === "en") return setLang("ar");
                 return setLang("en");
               }}
             >
-              <li className="btn p-0 m-0">Ar</li>/
-              <li className="btn p-0 m-0" onClick={() => setLang("en")}>
-                En
-              </li>
-            </ul>
+              <i class="fa-solid fa-globe mx-1" />
+              <div className="btn p-0 m-0">
+                {lang === "en" ? "عربي" : "English"}
+              </div>
+            </div>
           </div>
         </div>
       </nav>
