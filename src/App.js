@@ -3,7 +3,6 @@ import './App.css';
 import Layout from './Components/Layout/Layout';
 import Dynamicbalance from './Components/DynamicBalancing/Dynamicbalance';
 import Welding from './Components/Welding/Welding';
-import Metal from './Components/Metal/Metal';
 import Workshop from './Components/Workshop/Workshop';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
@@ -14,6 +13,7 @@ import Pressing from './Components/Pressing/Pressing';
 import Hydraulic from './Components/Hydraulic/Hydraulic';
 import Wire from './Components/Wire/Wire';
 import Projects from './pages/Projects/Projects';
+import Metalwork from './Components/MetalWork/Metalwork';
 
 function App() {
  let routes =  createBrowserRouter([
@@ -22,13 +22,13 @@ function App() {
   {path:"service" , element:<Service/>},
   {path:"workshop" , element:<Workshop/>},
   {path:"projects", element:<Projects/>},
-  {path:"home" , element:<Home/> , children:[
+  {path:"home", element:<Home/> , children:[
     {path:"forming", element:<Forming/>},
     {path:"dynamic", element:<Dynamicbalance/>},
     {path:"welding", element:<Welding/>},
     {path:"Pressing", element:<Pressing/>},
     {path:"Hydraulic", element:<Hydraulic/>},
-    {path:"metal", element:<Metal/>},
+    {path:"metal", element:<Metalwork/>},
     {path:"wire",element:<Wire/>}
     
   ]},

@@ -1,25 +1,22 @@
 import React from "react";
 
 import WS1 from "../../assets/images/workshop.png";
+import { useTranslation } from "react-i18next";
 
 export default function Forming() {
+  const {t} = useTranslation();
   return (
     <>
       <div>
         <div className="container">
           <div className="row mt-4">
             <div className="col-md-4 dynamicCustom mt-3 mb-2">
-              <h2 className="mt-4 pt-3">Forming</h2>
+              <h2 className="mt-4 pt-3">{t("Forming.home.title")}</h2>
               <p>
-                We have the latest German balancing machine "SCHENCK" with the
-                possibility of doing dynamic balancing up to 12 meters long and
-                weights up to 25 tons ,Balancing for all kinds of machines
+             {t("Forming.home.P")}
               </p>
               <p>
-                machines e.g. Turbines, Engines, fans, washers... etc with the
-                possibility of making detection of dynamic balancing on
-                customer's site using the German SMART Balancer by our
-                specialists in the Machines Axial tuning work
+              {t("Forming.home.P2")}
               </p>
             </div>
 
