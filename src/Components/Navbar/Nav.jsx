@@ -17,7 +17,7 @@ export default function Navbar() {
     <>
       <nav className="navbar fixed-top navbar-expand-lg bg-white">
         <div className="container">
-          <Link className="navbar-brand" to="/home">
+          <Link className="navbar-brand" to="/">
             <img src={logos} width={"200px"} alt="" />
           </Link>
           <button
@@ -34,56 +34,32 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link
-                  className="nav-link active mx-3"
-                  aria-current="page"
-                  to="/home"
-                >
+                <Link className="nav-link active mx-3" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active mx-3"
-                  aria-current="page"
-                  to="/about-us"
-                >
+                <Link className="nav-link active mx-3" aria-current="page" to="/about-us">
                   About Us
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active mx-3"
-                  aria-current="page"
-                  to="/service"
-                >
+                <Link className="nav-link active mx-3" aria-current="page" to="/service">
                   Service
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active mx-3"
-                  aria-current="page"
-                  to="/workshop"
-                >
+                <Link className="nav-link active mx-3" aria-current="page" to="/workshop">
                   Workshops
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active mx-3"
-                  aria-current="page"
-                  to="/projects"
-                >
+                <Link className="nav-link active mx-3" aria-current="page" to="/projects">
                   Projects
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active mx-3"
-                  aria-current="page"
-                  to="contact-us"
-                >
+                <Link className="nav-link active mx-3" aria-current="page" to="contact-us">
                   Contact us
                 </Link>
               </li>
@@ -97,9 +73,7 @@ export default function Navbar() {
               }}
             >
               <i class="fa-solid fa-globe mx-1" />
-              <div className="btn p-0 m-0">
-                {lang === "en" ? "عربي" : "English"}
-              </div>
+              <div className="btn p-0 m-0">{lang === "en" ? "عربي" : "English"}</div>
             </div>
           </div>
         </div>
