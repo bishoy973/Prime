@@ -32,7 +32,6 @@ export default function Contactus() {
 <p className="pt-3 ps-3"><i className="fa-solid fa-location-dot pe-1"></i>{t("Location")}</p>
 <p className="pt-3 ps-3"><i className="fa-solid fa-phone-volume pe-1"></i>{t("Phone")}</p>
 <p className="pt-3 ps-3"><i className="fa-solid fa-envelope pe-1"></i>{t("Email")}</p>
-
 </div>
 <div className=" h-100  p-3">
 <img src={contacttImg} className="h-100" alt="" />
