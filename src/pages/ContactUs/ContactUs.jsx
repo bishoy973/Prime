@@ -1,9 +1,10 @@
 import React from "react";
-import contactHeader from "../../assets/images/head_contact.png";
-import contacttImg from "../../assets/images/contact.png";
 import { useTranslation } from "react-i18next";
 
-export default function ContactUss() {
+import contactHeader from "../../assets/images/head_contact.png";
+import contacttImg from "../../assets/images/contact.png";
+
+export default function ContactUs() {
   const { t } = useTranslation();
   return (
     <>
