@@ -6,7 +6,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "./intel/config";
 
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 reportWebVitals();

@@ -1,12 +1,13 @@
 body {
   margin: 0;
-
   color: #1f4877;
 }
+
 img,
 svg {
   width: max-content !important;
 }
+
 .homeCustom {
   position: absolute !important;
   width: 648px !important;
@@ -77,24 +78,10 @@ code {
 
   background-image: linear-gradient(#1b334f, #3a86dd);
 }
-.cardImg {
-  width: 300px !important;
-  height: 220px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
+
 .card {
   background-color: transparent !important;
   border: none !important;
-}
-.customProjects {
-  cursor: pointer !important;
-  color: #1f4877 !important;
-}
-
-.counter-section {
-  padding: 100px 20%;
-  background-image: linear-gradient(#1b334f, #3a86dd);
 }
 
 .dynamicCustom {
@@ -185,4 +172,42 @@ panelStyle {
 }
 .ant-collapse-content {
   background: linear-gradient(180deg, rgba(221, 221, 221, 0.32) 0%, rgba(27, 51, 79, 0.27) 100%);
+}
+
+/* Sections */
+/* Counter/Stats Section */
+.counter-section {
+  padding: 100px 20%;
+  background-image: linear-gradient(#1b334f, #3a86dd);
+}
+
+/* Our Projects */
+.projects-section {
+  padding: 100px 5%;
+
+  .customProjects {
+    cursor: pointer !important;
+    color: #1f4877 !important;
+  }
+
+  .card-group {
+    gap : 20px;
+  }
+  
+  .project-overview {
+    .img-bg {
+      width: 100%;
+      height: 385px;
+      background-position: center;
+      background-size: cover;
+
+      border-radius: 10px;
+    }
+  }
+  
+}
+
+
+.text-primary {
+  color : #1F4877 !important;
 }

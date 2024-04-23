@@ -2,6 +2,8 @@ import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+import StatsList from "./components/Stats";
+import ProjectsOverview from "./components/OurProjects";
 import WorkNav from "../../WorkshopLayout/WorkNav";
 
 import img from "../../assets/images/image 97.png";
@@ -23,7 +25,6 @@ import serviceIcon5 from "../../assets/images/serviceIcon5.svg";
 
 import vid from "../../assets/images/video.svg";
 import customers from "../../assets/images/ourCustomers.svg";
-import StatsList from "./components/Stats";
 
 export default function Home() {
   let nav = useNavigate();
@@ -157,40 +158,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container">
-        <div className="d-flex justify-content-between">
-          <div>
-            <p>{t("ourProject.hero.title")}</p>
-            <h2>{t("ourProject.hero.title.P1")}</h2>
-            <h2>{t("ourProject.hero.title.P2")}</h2>
-          </div>
-
-          <p className="customProjects text-info fw-bolder" onClick={() => nav("/projects")}>
-            <span className="pe-1">{t("ourProject.hero.title.btn")}</span> <i class="fa-solid fa-arrow-right"></i>
-          </p>
-        </div>
-        <div className="row justify-content-center mt-5">
-          <div className="card col-md-3">
-            <img src={img2} className="cardImg card-img-top w-100" alt="..." />
-            <div className="card-body">
-              <p className="card-text">{t("ourProject.hero.title.subP2")}</p>
-            </div>
-          </div>
-          <div className="card col-md-3">
-            <img src={img3} className="cardImg card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">{t("ourProject.hero.title.subP3")}</p>
-            </div>
-          </div>
-
-          <div className="card col-md-3">
-            <img src={img1} className="cardImg card-img-top w-100" alt="..." />
-            <div className="card-body">
-              <p className="card-text">{t("ourProject.hero.title.subP1")}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProjectsOverview />
 
       <StatsList />
 
