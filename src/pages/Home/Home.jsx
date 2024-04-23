@@ -176,8 +176,9 @@ export default function Home() {
       <div className="mt-5">
         <img src={vid} className="w-100" alt="" />
       </div>
-      <div className="container mb-5 pb-5">
-        <h2 className="mt-5 text-center">{t("topCustomers.home.title")}</h2>
+
+      <div className="container my-10">
+        <h2 className="text-center">{t("topCustomers.home.title")}</h2>
         <div>
           <img src={customers} className="w-100 mt-5" alt="" />
         </div>
