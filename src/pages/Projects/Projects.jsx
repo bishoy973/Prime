@@ -1,10 +1,9 @@
-import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
-
-import Slider from "react-slick";
-
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import Slider from "react-slick";
 
 import imgProject from "../../assets/images/head_project.png";
 import projectImg from "../../assets/images/image6.png";
@@ -24,7 +23,7 @@ export default function Projects() {
   };
 
   return (
-    <>
+    <div className="p5">
       <div className="d-flex justify-content-center w-100 align-items-center bg-danger">
         <img src={imgProject} className="w-100" alt="" />
         <div className="homeCustom align-items-center bg w-100">
@@ -34,6 +33,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+
       <div className="container mt-5 pt-5">
         <div className="mt-5 pt-5">
           <div className="d-flex justify-content-between">
@@ -80,6 +80,6 @@ export default function Projects() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
