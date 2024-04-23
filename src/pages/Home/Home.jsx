@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 
 import StatsList from "./components/Stats";
 import ProjectsOverview from "./components/OurProjects";
+import WorkshopsTabs from "./components/WorkshopCarousel/WorkshopCarousel";
+
 import WorkNav from "../../WorkshopLayout/WorkNav";
 
 import img from "../../assets/images/image 97.png";
@@ -162,15 +164,13 @@ export default function Home() {
 
       <StatsList />
 
-      <div className="text-center   mt-5 pt-5 my-5">
-        <h2>{t("workshop.hero.title")}</h2>
-        <p className="container px-5 justify-content-center text-center">{t("workshop.home.p")}</p>
-        <div className="m-3">Lorem ipsum dolor sit amet.</div>
-
-        <div className="mt-3">
-          <WorkNav />
+      <div className="workshops-section my-10">
+        <div className="text-center mb-5">
+          <h2 className="text-uppercase mb-4">{t("workshop.hero.title")}</h2>
+          <p className="container w-50 px-5 justify-content-center text-center">{t("workshop.home.p")}</p>
         </div>
-        <Outlet />
+
+        <WorkshopsTabs />
       </div>
 
       <div className="mt-5">

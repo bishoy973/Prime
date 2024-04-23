@@ -3,6 +3,19 @@ body {
   color: #1f4877;
 }
 
+.m-10 {
+  margin: 6rem;
+}
+
+.my-10 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.p-10 {
+  padding: 6rem;
+}
+
 img,
 svg {
   width: max-content !important;
@@ -76,7 +89,7 @@ code {
 .serviceCustomeHome {
   height: 655px !important;
 
-  background-image: linear-gradient(#1b334f, #3a86dd);
+  background-image: linear-gradient(#1b334f, #4a4b4d);
 }
 
 .card {
@@ -86,10 +99,8 @@ code {
 
 .dynamicCustom {
   background-color: #1f4877 !important;
-  width: 620px !important;
-  height: 357px !important;
-  color: white !important;
 }
+
 .footer {
   height: 157px !important;
 }
