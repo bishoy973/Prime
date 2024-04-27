@@ -72,10 +72,10 @@ const WorkshopDetails = ({ workshop }: { workshop: Tabs }) => {
 
   return (
     <div className="row mt-4">
-      <div className="col-md-5 dynamicCustom p-5 text-white">
-        <h2 className="mt-5">{t(details.title)}</h2>
-        <p className="mt-5">{t(details.P)}</p>
-        <p className="mt-5">{t(details.P2)}</p>
+      <div className="col-md-5 dynamicCustom p-4 p-lg-5 text-white">
+        <h2 className="mt-lg-5">{t(details.title)}</h2>
+        <p className="mt-4 mt-lg-5">{t(details.P)}</p>
+        <p className="mt-4 mt-lg-5">{t(details.P2)}</p>
       </div>
 
       <div className="col-md-7">

@@ -32,9 +32,9 @@ const ProjectsList = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="card-group justify-content-center mt-5">
+    <div className="row justify-content-center mt-5">
       {projectsList.map(({ img, title, text }) => (
-        <div className="card project-overview">
+        <div className="col-12 col-lg-4 card project-overview">
           <div
             className="img-bg"
             style={{

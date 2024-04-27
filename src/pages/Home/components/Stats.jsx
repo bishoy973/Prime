@@ -33,7 +33,7 @@ const Stat = ({ title, count, iconClassName }) => {
 const StatsList = () => {
   return (
     <div className="container-fluid counter-section bg-danger">
-      <div className="d-flex justify-content-around">
+      <div className="d-flex justify-content-around flex-column flex-lg-row">
         {stats.map((stat, index) => (
           <Stat key={index} {...stat} />
         ))}

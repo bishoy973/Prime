@@ -3,6 +3,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import StatsList from "./components/Stats";
+import { OurServices } from "./components/OurServices";
 import ProjectsOverview from "./components/OurProjects";
 import WorkshopsTabs from "./components/WorkshopCarousel/WorkshopCarousel";
 
@@ -19,11 +20,6 @@ import frame3 from "../../assets/images/Frame3.svg";
 import frame4 from "../../assets/images/Frame4.svg";
 import frame5 from "../../assets/images/Frame5.svg";
 import frame6 from "../../assets/images/Frame6.svg";
-import serviceIcon1 from "../../assets/images/ServiceIcon1.svg";
-import serviceIcon2 from "../../assets/images/serviceIcon2.svg";
-import serviceIcon3 from "../../assets/images/serviceIcon3.svg";
-import serviceIcon4 from "../../assets/images/serviceIcon4.svg";
-import serviceIcon5 from "../../assets/images/serviceIcon5.svg";
 
 import vid from "../../assets/images/video.svg";
 import customers from "../../assets/images/ourCustomers.svg";
@@ -35,9 +31,8 @@ export default function Home() {
 
   return (
     <>
- 
-     <div className="d-flex align-items-center col-12 bg-danger w-100  vh-100">
-       <img src={img} className=" w-100 vh-100" alt="" />
+      <div className="cover-container d-flex align-items-center col-12 bg-danger w-100  vh-100">
+        <img src={img} className="img-fluid h-100" alt="" />
         <div className="customImgHome w-100 vh-100"></div>
         <div className="homeCustom align-items-center ms-5 ps-5 w-100">
           <div className=" ms-4 ps-1">
@@ -53,12 +48,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-    
 
-      <div className="container  vh-100 d-flex align-items-center">
+      <div className="container vh-100 d-flex align-items-center">
         <div className="row">
-          <div className="col-md-5    d-flex justify-content-center align-items-center">
-            <div className="customAbout  rounded">
+          <div className="col-lg-5 mb-4 mb-lg-2 d-flex justify-content-center align-items-center">
+            <div className="customAbout rounded">
               <img src={logoo} className="" alt="" />
             </div>
             <div className="w-50 h-100 pe-2">
@@ -69,7 +63,8 @@ export default function Home() {
               <img src={img3} className="w-100 h-50 pt-1" alt="" />
             </div>
           </div>
-          <div className="col-md-6">
+
+          <div className="col-lg-6">
             <h3>{t("home.hero.title.prime-forP2")}</h3>
 
             <div className="h4">{t("About.hero.title.prime-forh4")}</div>
@@ -91,64 +86,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid  d-flex justify-content-center align-items-center serviceCustomeHome">
-        <div className="container">
+      <div className="container-fluid  d-flex justify-content-center align-items-center our-services-section">
+        <div className="p-10">
           <div className="row">
-            <div className="col-md-3 ">
-              <div className="serviceBoxHome mb-2">
-                <div className=" w-100 h-100">
-                  <div className=" h-50 mx-auto d-flex align-items-end justify-content-center">
-                    <img src={serviceIcon1} width={"35px"} height={"35px"} alt="" />
-                  </div>
-                  <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card1")}</div>
-                </div>
-              </div>
-              <div className="serviceBoxHome   bg-danger">
-                <div className=" w-100 h-100">
-                  <div className=" h-50 mx-auto d-flex align-items-end justify-content-center">
-                    <img src={serviceIcon1} width={"35px"} height={"35px"} alt="" />
-                  </div>
-                  <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card2")}</div>
-                </div>
-              </div>
+            <div className="col-lg-8">
+              <OurServices />
             </div>
-            <div className="col-md-3 ">
-              <div className="serviceBoxHome mb-2">
-                <div className=" w-100 h-100">
-                  <div className=" h-50 mx-auto d-flex align-items-end justify-content-center">
-                    <img src={serviceIcon2} width={"35px"} height={"35px"} alt="" />
-                  </div>
-                  <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card3")}</div>
-                </div>
-              </div>
-              <div className="serviceBoxHome   bg-danger">
-                <div className=" w-100 h-100">
-                  <div className=" h-50 mx-auto d-flex align-items-end justify-content-center">
-                    <img src={serviceIcon2} width={"35px"} height={"35px"} alt="" />
-                  </div>
-                  <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card4")}</div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 ">
-              <div className="serviceBoxHome mb-2">
-                <div className=" w-100 h-100">
-                  <div className=" h-50 mx-auto d-flex align-items-end justify-content-center">
-                    <img src={serviceIcon3} width={"35px"} height={"35px"} alt="" />
-                  </div>
-                  <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card5")}</div>
-                </div>
-              </div>
-              <div className="serviceBoxHome   bg-danger">
-                <div className=" w-100 h-100">
-                  <div className=" h-50 mx-auto d-flex align-items-end justify-content-center">
-                    <img src={serviceIcon3} width={"35px"} height={"35px"} alt="" />
-                  </div>
-                  <div className="pt-3 text-center  fw-bolder">{t("OurService.hero.card6")}</div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-3 text-white">
+            <div className="col-lg-4 text-white">
               <small>{t("ourService.hero.title.prime.forSmall")}</small>
               <p className="fs-2 fw-bolder">{t("ourService.hero.title.prime.forh2")}</p>
               <p className="fs-4">{t("ourService.hero.title.prime.forP1")}</p>
@@ -169,7 +113,7 @@ export default function Home() {
       <div className="workshops-section my-10">
         <div className="text-center mb-5">
           <h2 className="text-uppercase mb-4">{t("workshop.hero.title")}</h2>
-          <p className="container w-50 px-5 justify-content-center text-center">{t("workshop.home.p")}</p>
+          <p className="container w-100 w-lg-50 px-5 justify-content-center text-center">{t("workshop.home.p")}</p>
         </div>
 
         <WorkshopsTabs />
