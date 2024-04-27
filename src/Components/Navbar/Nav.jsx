@@ -8,6 +8,7 @@ export default function Navbar() {
   const { i18n } = useTranslation();
 
   const [lang, setLang] = useState("en");
+  const {t} = useTranslation();
 
   useEffect(() => {
     i18n.changeLanguage(lang);
@@ -35,32 +36,35 @@ export default function Navbar() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className="nav-link active mx-3" aria-current="page" to="/">
-                  Home
+                  {t("navbar.Home")}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active mx-3" aria-current="page" to="/about-us">
-                  About Us
+                  {t("navbar.AboutUs")}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active mx-3" aria-current="page" to="/service">
-                  Service
+                  {t("navbar.Service")}
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active mx-3" aria-current="page" to="/workshop">
-                  Workshops
+                 {t("navbar.Workshops")}
+
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link active mx-3" aria-current="page" to="/projects">
-                  Projects
+                  {t("navbar.Projects")}
+
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active mx-3" aria-current="page" to="contact-us">
-                  Contact us
+                <Link className="nav-link active mx-3" aria-current="page" to="contactus">
+                 {t("navbar.ContactUs")}
+
                 </Link>
               </li>
             </ul>

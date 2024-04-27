@@ -115,14 +115,11 @@
      "Location":"7 Mohandes Hamed Al Kholi, San Stefano, El Raml 1, Alexandria",    
       "Phone":"+20-106 344 0 288",
      "Email":"info@prime-solutions.org",
-     "":"",
-     "":"",
-     "":""
-
-
-
-
-
-    
-
+    "Navbar":"*************************************",
+     "navbar.Home":"Home",
+     "navbar.AboutUs":"About Us",
+     "navbar.Service":"Service",
+     "navbar.Workshops":"Workshops",
+     "navbar.Projects":"Projects",
+     "navbar.ContactUs":"  Contact us"
   }

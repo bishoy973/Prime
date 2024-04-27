@@ -13,8 +13,8 @@ export default function About() {
 
   return (
     <>
-      <div className="d-flex justify-content-center w-100 align-items-center bg-danger">
-        <img src={imgAbout} className="w-100" alt="" />
+      <div className="d-flex justify-content-center align-items-center bg-danger">
+        <img src={imgAbout} className="w-100 vh-100" alt="" />
         <div className="homeCustom align-items-center bg w-100">
           <div className="position-absolute justify-content-center w-100">
             <p className="w-100 text-white  d-flex justify-content-center fs-1 fw-bolder">About Us</p>

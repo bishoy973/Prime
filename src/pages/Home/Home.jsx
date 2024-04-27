@@ -35,8 +35,9 @@ export default function Home() {
 
   return (
     <>
-      <div className="d-flex w-100 align-items-center bg-danger vh-100">
-        <img src={img} className="w-100 vh-100" alt="" />
+ 
+     <div className="d-flex align-items-center col-12 bg-danger w-100  vh-100">
+       <img src={img} className=" w-100 vh-100" alt="" />
         <div className="customImgHome w-100 vh-100"></div>
         <div className="homeCustom align-items-center ms-5 ps-5 w-100">
           <div className=" ms-4 ps-1">
@@ -52,12 +53,13 @@ export default function Home() {
           </div>
         </div>
       </div>
+    
 
       <div className="container  vh-100 d-flex align-items-center">
         <div className="row">
           <div className="col-md-5    d-flex justify-content-center align-items-center">
             <div className="customAbout  rounded">
-              <img src={logoo} className=" text-white w-100" alt="" />
+              <img src={logoo} className="" alt="" />
             </div>
             <div className="w-50 h-100 pe-2">
               <img src={img1} className="w-100 h-100" alt="" />
@@ -68,7 +70,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-md-6">
-            <h3>About us</h3>
+            <h3>{t("home.hero.title.prime-forP2")}</h3>
 
             <div className="h4">{t("About.hero.title.prime-forh4")}</div>
             <div className="h5">{t("About.hero.title.prime-forh5")}</div>

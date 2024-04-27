@@ -26,7 +26,7 @@ function App() {
         { path: "service", element: <Service /> },
         { path: "workshop", element: <Workshop /> },
         { path: "projects", element: <Projects /> },
-        { path: "contact-us", element: <ContactUs /> },
+        { path: "contactus", element: <ContactUs /> },
       ],
     },
   ]);
