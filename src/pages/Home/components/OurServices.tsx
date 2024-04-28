@@ -29,6 +29,8 @@ const services = [
   },
   {
     title: "OurService.hero.card6",
+    icon: serviceIcon5,
+
   },
 ];
 

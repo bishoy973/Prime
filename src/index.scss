@@ -37,7 +37,8 @@ svg {
 
 .homeCustom {
   position: absolute !important;
-  width: 648px !important;
+  width: 100% !important;
+
 }
 .homeCustom2 {
   font-size: 64px !important;
@@ -46,8 +47,9 @@ svg {
 }
 .homecustom3 {
   font-size: 24px;
-  text-align: left;
+  text-align: left !important;
   color: white !important;
+
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -58,15 +60,16 @@ code {
   opacity: 47% !important;
 }
 .customBtn {
-  margin-left: 100px;
   background-color: #adaca7;
 }
 .customBtn2 {
   background-color: #adaca7;
 }
 .customAbout {
-  width: 203px;
-  height: 203px;
+  width: 200px;
+  height: 200px;
+  padding: 0 !important;
+  margin: 0 !important;
   border-radius: 50% !important;
   background-color: #1f4877;
   position: absolute;
@@ -129,8 +132,10 @@ code {
 }
 
 .customPositionAbout {
-  position: relative;
-  left: -35px !important;
+ @media  screen and (max-width: 600px) {
+  top: -47px;
+  margin-left: 34px;
+ } left: -35px !important;
   margin-top: 40px;
   bottom: 17px !important;
 }
@@ -165,8 +170,11 @@ panelStyle {
   background: linear-gradient(180deg, rgba(221, 221, 221, 0.32) 0%, rgba(27, 51, 79, 0.27) 100%);
 }
 .vl {
+  @media  screen and (min-width: 768px){
   border-left: 6px solid black;
   height: 50px;
+  }
+
 }
 .aboutextBox {
   width: 474px;

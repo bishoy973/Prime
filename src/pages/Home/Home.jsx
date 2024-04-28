@@ -31,29 +31,31 @@ export default function Home() {
 
   return (
     <>
-      <div className="cover-container d-flex align-items-center col-12 bg-danger w-100  vh-100">
-        <img src={img} className="img-fluid h-100" alt="" />
+      <div className="cover-container d-flex align-items-center col-12 bg-danger  vh-100">
+        <img src={img} className="img-fluid w-100 h-100" alt="" />
         <div className="customImgHome w-100 vh-100"></div>
-        <div className="homeCustom align-items-center ms-5 ps-5 w-100">
-          <div className=" ms-4 ps-1">
-            <h2 className="homecustom2  text-white ms-5 ps-5">
+        <div className=" position-absolute align-items-center ms-md-5 ps-md-5">
+          <div className=" ms-4 ps-1 text-sm-start">
+            <h2 className="homecustom2  text-white m-0 ps-md-5">
               <p>{t("home.hero.title.prime-forP1")}</p>
               <p className="w-100">{t("home.hero.title.prime-forP2")}</p>
             </h2>
-            <p className="homecustom3 ms-5 ps-5">{t("home.hero.title.prime-forP3")}</p>
-            <button className="customBtn btn p-3  text-center" onClick={() => nav("/contactus")}>
-              {t("home.hero.title.prime-forBtn")}
-              <i class="fa-solid fa-phone-volume"></i>
-            </button>
+            <p className="homecustom3 m-0 ps-md-5">{t("home.hero.title.prime-forP3")}</p>
+           <div className="ps-md-5 mt-1">
+           <button className="customBtn btn p-3 m-0" onClick={() => nav("/contactus")}>
+           {t("home.hero.title.prime-forBtn")}
+           <i class="fa-solid fa-phone-volume"></i>
+         </button>
+           </div>
           </div>
         </div>
       </div>
 
-      <div className="container vh-100 d-flex align-items-center">
+      <div className="container vh-100 d-flex align-items-center mt-4">
         <div className="row">
           <div className="col-lg-5 mb-4 mb-lg-2 d-flex justify-content-center align-items-center">
             <div className="customAbout rounded">
-              <img src={logoo} className="" alt="" />
+              <img src={logoo} className="w-100" alt="" />
             </div>
             <div className="w-50 h-100 pe-2">
               <img src={img1} className="w-100 h-100" alt="" />
@@ -86,18 +88,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid  d-flex justify-content-center align-items-center our-services-section">
-        <div className="p-10">
+      <div className="cover-container  d-flex justify-content-center align-items-center our-services-section">
+        <div className="overflow-hidden">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <OurServices />
             </div>
-            <div className="col-lg-4 text-white">
+            <div className="col-lg-4 text-white ms-3 mt-2">
               <small>{t("ourService.hero.title.prime.forSmall")}</small>
               <p className="fs-2 fw-bolder">{t("ourService.hero.title.prime.forh2")}</p>
               <p className="fs-4">{t("ourService.hero.title.prime.forP1")}</p>
               <p>{t("ourService.hero.title.prime.forP2")}</p>
-              <button className="customBtn2 btn py-3 px-5 mt-5" onClick={() => nav("/contactus")}>
+              <button className="customBtn2 btn py-3 px-5 mt-5 mb-3" onClick={() => nav("/contactus")}>
                 {t("home.hero.title.prime-forBtn")}
                 <i class="fa-solid fa-phone-volume"></i>
               </button>
