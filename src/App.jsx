@@ -8,9 +8,8 @@ import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Service from "./pages/Service/Service";
 import Workshop from "./pages/Workshop/Workshop";
-
 import Layout from "./Components/Layout/Layout";
-import ContactUs from './pages/Contactus/ContactUs';
+import ContactUsPage from './pages/Contactus/ContactusPage';
 
 function App() {
   const { i18n } = useTranslation();
@@ -26,7 +25,7 @@ function App() {
         { path: "service", element: <Service /> },
         { path: "workshop", element: <Workshop /> },
         { path: "projects", element: <Projects /> },
-        { path: "contactus", element: <ContactUs /> },
+        { path: "contactus", element: <ContactUsPage /> },
       ],
     },
   ]);

@@ -3,13 +3,14 @@ import { useTranslation } from "react-i18next";
 
 import contactHeader from "../../assets/images/head_contact.png";
 import contacttImg from "../../assets/images/contact.png";
+import { Link } from 'react-router-dom';
 
-export default function ContactUs() {
+export default function ContactUsPage() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="d-flex justify-content-center w-100 align-items-center bg-danger mb-5">
-        <img src={contactHeader} className="w-100" alt="" />
+      <div className="d-flex justify-content-center w-100 align-items-center bg-danger mb-1 vh-100">
+        <img src={contactHeader} className="w-100 h-100" alt="" />
         <div className="homeCustom align-items-center bg w-100">
           <div className="position-absolute justify-content-center w-100">
             <p className="w-100 text-white  d-flex justify-content-center fs-1 fw-bolder">
@@ -20,7 +21,7 @@ export default function ContactUs() {
       </div>
 
       <div className="">
-        <div className="container mt-5">
+        <div className="container mt-1">
           <div className="row">
             <div className="container-fluid position-relative d-flex justify-content-center contactCustom shadow">
               <div className="position-absolute d-flex w-100 h-100">
@@ -33,16 +34,16 @@ export default function ContactUs() {
                   </p>
                   <p className="pt-3 ps-3">
                     <i className="fa-solid fa-phone-volume pe-1"></i>
-                    {t("Phone")}
+                  <Link to={"tel:+201063440288"}  className="text-decoration-none text-black">{t("Phone")}</Link>
                   </p>
                   <p className="pt-3 ps-3">
                     <i className="fa-solid fa-envelope pe-1"></i>
                     {t("Email")}
                   </p>
                 </div>
-                <div className=" h-100  p-3">
-                  <img src={contacttImg} className="h-100" alt="" />
-                </div>
+               {screen.width>768? <div className=" h-100  p-3">
+               <img src={contacttImg} className="h-100" alt="" />
+             </div>:null}
               </div>
             </div>
           </div>
