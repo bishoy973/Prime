@@ -3,10 +3,11 @@ import { useTranslation } from "react-i18next";
 import img1 from "../../../assets/images/about_1.png";
 import img2 from "../../../assets/images/about-2.png";
 import img3 from "../../../assets/images/about-3.png";
+import { useNavigate } from "react-router-dom";
 
 const ProjectsOverview = () => {
   const { t } = useTranslation();
-
+let nav = useNavigate();
   return (
     <div className="container projects-section">
       <div className="d-flex justify-content-between">
@@ -28,7 +29,7 @@ const ProjectsOverview = () => {
 
 export default ProjectsOverview;
 
-const ProjectsList = () => {
+export const ProjectsList = () => {
   const { t } = useTranslation();
 
   return (
@@ -52,7 +53,7 @@ const ProjectsList = () => {
   );
 };
 
-const projectsList = [
+export const projectsList = [
   {
     img: img2,
     title: "ourProject.overview.pOne.title",

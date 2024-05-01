@@ -37,20 +37,10 @@ const {t} = useTranslation();
     <div className="cover-container  d-flex justify-content-center align-items-center our-services-section">
         <div className="overflow-hidden">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-9 mx-auto py-3">
               <OurServices />
             </div>
-            <div className="col-lg-4 text-white ms-3 mt-2">
-              <small>{t("ourService.hero.title.prime.forSmall")}</small>
-              <p className="fs-2 fw-bolder">{t("ourService.hero.title.prime.forh2")}</p>
-              <p className="fs-4">{t("ourService.hero.title.prime.forP1")}</p>
-              <p>{t("ourService.hero.title.prime.forP2")}</p>
-              <button className="customBtn2 btn py-3 px-5 mt-5 mb-3" onClick={() => nav("/contactus")}>
-                {t("home.hero.title.prime-forBtn")}
-                <i class="fa-solid fa-phone-volume"></i>
-              </button>
             </div>
-          </div>
         </div>
       </div>
  <div className="FAQ mx-auto d-flex mx-3 px-5">

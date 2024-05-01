@@ -229,10 +229,9 @@ panelStyle {
   .project-overview {
     .img-bg {
       width: 100%;
-      height: 385px;
+      height: 185px !important;
       background-position: center;
       background-size: cover;
-
       border-radius: 10px;
     }
   }
@@ -243,3 +242,7 @@ panelStyle {
 .text-primary {
   color : #1F4877 !important;
 }
+// .contactformImg{
+//   width: 70px;
+//   height: 300px !important;
+// }
