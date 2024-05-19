@@ -12,6 +12,7 @@ import Layout from "./Components/Layout/Layout";
 import ContactUsPage from './pages/Contactus/ContactusPage';
 
 function App() {
+
   const { i18n } = useTranslation();
   document.body.dir = i18n.dir();
 
@@ -31,6 +32,7 @@ function App() {
   ]);
 
   return <RouterProvider router={routes} />;
+  
 }
 
 export default App;
